@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.javacodegeeks.examples</groupId>
+    <artifactId>FxTableViewExample</artifactId>
+    <version>1.0.0</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
+        <version.jdk>1.8</version.jdk>  <!-- 1.8 for JDK 8 -->
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <version.mvn.compiler>3.7.0</version.mvn.compiler><!-- NOTA: La ultima version de maven-compiler-plugin que acepta Java 6 es la 3.6.1 -->
+
+        <selenium.version>3.141.5</selenium.version>
+        <slf4j.version>1.7.26</slf4j.version>
+    </properties>
+
+    <dependencies></dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${version.mvn.compiler}</version>
+                <configuration>
+                    <source>9</source>
+                    <target>9</target>
+                    <compilerVersion>${version.jdk}</compilerVersion>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
